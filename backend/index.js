@@ -22,7 +22,7 @@ const io = new Server(server,{
     }
 });
 
-connectmongoose("mongodb://127.0.0.1:27017/imageapp");
+connectmongoose(MONGODB_URI);
 
 
 app.use(cors(
