@@ -22,7 +22,7 @@ const io = new Server(server,{
     }
 });
 
-connectmongoose(MONGODB_URI);
+connectmongoose(process.env.MONGODB_URI);
 
 
 app.use(cors(
