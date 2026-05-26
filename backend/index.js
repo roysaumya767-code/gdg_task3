@@ -4,7 +4,7 @@ const cookieparser = require("cookie-parser");
 const {restrictToLoggedInUserOnly,identifypersonWhoUpvote}=  require("./middleware/auth.js");
 require('dotenv').config(); 
 
-//const PORT = process.env.PORT || 1111;
+const PORT = process.env.PORT || 1111;
 const app = express();
 const http = require("http");
 const{Server} = require("socket.io");
@@ -57,4 +57,4 @@ app.use("/login",loginroute);
 
 });
 
-server.listen(1111,console.log("server started!!"));
+server.listen( PORT,console.log("server started!!"));
