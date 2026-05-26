@@ -27,7 +27,7 @@ connectmongoose(process.env.MONGODB_URI);
 
 app.use(cors(
     {
-    origin: "https://gdg-task3-jsb9h97d9-roysaumya767-codes-projects.vercel.app",  // your React frontend URL
+    origin: "https://gdg-task3-roysaumya767-codes-projects.vercel.app",  // your React frontend URL
     credentials: true
 }));
 
