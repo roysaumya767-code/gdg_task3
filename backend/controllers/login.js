@@ -16,7 +16,11 @@ async function handleuserlogin(req,res) {
       }
     
       const token = setuser(user);
-      res.cookie('uid',token);
+      res.cookie('uid',token, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "None",
+});
       
 
 
