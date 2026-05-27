@@ -34,6 +34,7 @@ async function handlephotoupload(req, res) {
         });
 
         req.io.emit('photofile', cloudinaryresponse.secure_url);
+    console.log("REQ IO:", req.io);
 
         return res.json({ success: true, url: cloudinaryresponse.secure_url });
     
