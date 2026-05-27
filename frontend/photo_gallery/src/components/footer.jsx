@@ -28,7 +28,7 @@ function Footer() {
     const formdata = new FormData(); // ← MOVE INSIDE handler
         formdata.append("uploadedphoto", file); // ← now file has the actual value
 
-        axios.post("https://gdg-task3-backend.onrender.com", formdata, {
+        axios.post("https://gdg-task3-backend.onrender.com/upload", formdata, {
             headers: { "Content-Type": "multipart/form-data" } // ← add this
         })
         .then((res) => {
